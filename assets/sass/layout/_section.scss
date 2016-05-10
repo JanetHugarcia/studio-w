@@ -1,0 +1,121 @@
+/*service*/
+#service{
+	.img-res{
+		img{
+			max-width: 100%;
+			height:auto;
+			padding-top:5px;
+		}
+	}
+	.servicesdescrip{
+		padding-left:63px;
+		.media {
+			.media-left{
+				img{
+					padding-top: 15px;
+				    padding-right: 20px;
+				    opacity: .3;
+				}
+			}
+		}
+	}
+}
+
+/*about*/
+#about{
+	background-image:url(../../assets/images/bg3.jpg);
+	background-repeat:repeat;
+	background-size: 100% 130%;
+    background-position: 0px 350px;
+    background-attachment:fixed;
+	color:white;
+
+	.fondo{
+		background-color:rgba(0,0,0,.6);
+		p{
+			padding-right:10%;
+		}
+		.titular hr {
+		    border-color:white;
+	   }
+	}
+}
+/*team*/
+.w-100{
+	width: 100%;
+}
+
+#team{
+	.descripteam{
+		font-size: .9em;
+		padding:30px 15px;
+
+		h5{
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		small{
+			font-size: 1em;
+		}
+
+		p{
+			padding: 15px 0px 20px;
+			line-height: 1.7;
+		}
+	}
+}
+
+/*contactus*/
+#contactus{
+
+	form{
+		.formcontact{
+			height: 40px;
+			@include forma;
+		}
+		textarea{
+			height: 200px;
+			@include forma;
+		}
+		a{
+			display:inline-block;
+			padding:10px 20px;
+			margin-top:20px;
+		}
+	}
+	.social{
+		font-size:14px;
+		padding:8px;
+	}
+	.dropdown{
+		border-bottom:1px solid black;
+
+		button{
+			text-align: left;
+			font-weight: 600;
+		}
+	}
+	#dropdownMenu1{
+		background-color:transparent;
+		padding:15px 0px;
+		span{
+			margin-left:20px;
+		}
+		.arrow_triangle-down{
+			background-color: #333;
+    		color: white;
+    		padding:4px;
+		}
+		
+
+	}
+	article{
+		padding:5%;
+	}
+
+}
+/*footer*/
+footer{
+	background-color:#F0F0F1;
+	padding:40px 25px;
+}

@@ -1,0 +1,165 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font-size:14px;
+	font-family:"Raleway";
+}
+hr,h3,table,tr,td{
+	margin:0;
+	padding:0;
+}
+.mg-30{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.mg{
+	margin-top:10%;
+	margin-bottom:10%;
+}
+.pd{
+	padding-top:7%;
+	padding-bottom:7%;
+}
+.pdt{
+	padding-top:4%;
+}
+.pd-10{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.pd-0{
+	padding:0;
+}
+.fondo{
+	background-color:rgba(0,0,0,.4);
+	height:100%;
+}
+a{
+	&:visited,&:hover,&:focus {
+		text-decoration: none;
+	}    
+ }
+/*titulo secciones*/
+.titular{
+	h3{
+		margin-top: 20px;
+		font-size: 2.2em;
+		line-height: 1.2;
+		font-weight: 800;
+	}
+	hr{
+		width: 35px;
+		border:1px solid black;
+		margin-top:15px;
+	}
+
+}
+/*link sociales*/
+.social{
+	width:30px;
+	height:30px;
+	font-size:16px;
+	padding:7px;
+	color:gray;
+	margin-right:1%;
+	margin-bottom:1%;
+	border-radius:100%;
+	display:inline-block;
+	&:hover{
+		text-decoration:none;
+		background-color:$azul;
+		color:white;
+		cursor:pointer;
+	}
+}
+/*tablas*/
+table,td,tr{
+	padding:0;
+	margin:0;
+}
+table{
+	text-align:center;
+	border-spacing: 0;
+	background-color: #F0F0F1;
+	font-size: 14px;
+	margin: 11% auto 2%;
+
+}
+table{
+	tr{
+		td{
+			width: 150px;
+			img{
+				opacity: 0.5;
+			}
+			p{
+				text-transform: uppercase;
+			}
+			h3{
+				font-size: 30px;
+				margin:15px;
+				color: gray;
+			}
+			p span{
+				font-size: 45px;
+			}
+			a{
+				width: 100%;
+				display:block;
+				padding:25px;
+			}
+			&:nth-child(even){
+				border-left:1px solid #CECECE;
+			}
+		}
+	}
+}
+.top{
+	border-top:1px solid #CECECE;
+	padding:25px 25px 10px;
+}
+.lower{
+	text-transform: lowercase;
+}
+.boton{
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #333;
+	&:hover{
+		color:white;
+		background-color:$azul;
+	}
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/*boton up-bottom*/
+.deslice{
+	margin-top:25%;
+	border-radius:100%;
+	padding:5px;
+	font-size:30px;
+	font-weight:normal;
+	border:1px solid rgba(255,255,255,.8);
+	background-color:transparent;
+	&:hover{
+
+		color:rgba(255,255,255,.8);
+		border-color:$azul;
+	}
+
+}

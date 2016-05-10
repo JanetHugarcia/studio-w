@@ -1,0 +1,42 @@
+mixin insertimg(url,alt)
+	img( src="assets/images/"+ url, alt=alt)
+mixin insertimgres(url,alt)
+	img.w-100( src="assets/images/"+ url, alt=alt)
+mixin titlesection(one,two)
+	.titular
+		h3 #{one} <br> #{two}
+		hr
+mixin mediaservice(url,alt,title)
+	.media.mg-30
+		.media-left
+			+insertimg(url,alt)
+		.media-body
+			h4=title
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do elusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+mixin descripteam(name,work)
+	.descripteam
+		h5=name
+		small=work
+		p Sed metus eros, eleifend non porta et, gravida et augue. Phasellus non sapien metus. Morbi malesuada gringilla interdum. Nam vel facilisis.
+		a.fa.social_facebook.social
+		a.fa.social_twitter.social
+		a.fa.social_googleplus.social
+		a.fa.social_pinterest.social
+		a.fa.social_linkedin.social
+mixin droplist(text)
+	.dropdown
+		button.btn.btn-mas.dropdown-toggle(type="button", id="dropdownMenu1" data-toggle="dropdown", aria-haspopup="true", aria-expanded="true")
+			span.arrow_triangle-down
+			span=text
+		ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+			li
+				a(href="index.html") home
+			li 
+				a(href="columnistas.html") Columnistas
+			li 
+				a(href="blog.html") Blog
+			li 
+				a(href="contacto.html") Contacto
+
+
+

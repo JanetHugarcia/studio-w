@@ -1,0 +1,80 @@
+@media screen and (max-width:767px){
+	.navbar-toggle{
+		margin-top: 20px;
+	}
+	.navbar-brand{
+		padding:15px;
+		height: 80px;
+		img{
+			height: 50px;
+			display: inline-block;
+		}
+	}
+	.navbar-right{
+		margin-top: 0px;
+	}
+	.navbar-default {
+		padding-top: 0px;
+		.navbar-right{
+			background-color:#333;
+		}
+		
+	}
+	#service{
+		.servicesdescrip{
+			padding-left:0px;
+		}
+
+	}
+	#about{
+		.fondo{
+			p{
+				padding:0;
+			}
+		}
+	}
+
+	#team{
+		.descripteam{
+			text-align:center;
+			padding:0px;
+			margin:15px 0px;
+
+		}
+		img{
+			max-width: 255px;
+			margin:10px auto;
+			display: block;
+			border-radius:100%;
+		}
+	} 
+
+	.menu-fixed{
+
+		.navbar-default {
+			padding-top:0px;
+		}
+		.navbar{
+			padding-bottom:0px;
+		}
+	}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	.navbar-right{
+		font-size: 11px;
+
+	}
+	#team{
+		.descripteam{
+			text-align:center;
+			padding:0px;
+		}
+		img{
+			max-width: 255px;
+			margin:0 auto;
+			display: block;
+		}
+	} 
+}

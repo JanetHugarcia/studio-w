@@ -1,0 +1,258 @@
+include ././helper/mixin.jade
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		title Studios W
+		link(rel="stylesheet", href="assets/css/bootstrap.css")
+		link(rel="stylesheet", href="assets/css/elegant.css")
+		link(rel="stylesheet", href="assets/css/main.css")
+		link(rel="icon", type="image/jpeg", href="assets/images/w-logo.jpg")
+		link( href="https://fonts.googleapis.com/css?family=Raleway:400, 100, 200, 300, 600, 500, 700, 800, 900" rel="stylesheet")
+	body
+		section#hero
+			.fondo
+				header
+					nav(class="navbar navbar-default ")
+						.container
+							.navbar-header
+								button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+									span(class="sr-only") Toggle navigation
+									span(class="icon-bar")
+									span(class="icon-bar")
+									span(class="icon-bar")
+								a(class="navbar-brand" href="#")
+									+insertimg("w-logo.jpg", "studio w")
+							.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+								ul(class="nav navbar-nav navbar-right")
+									li
+										a(href="home.html") HOME
+									li
+										a(href="#service") SERVICES
+									li
+										a(href="#about") ABOUT
+									li
+										a(href="#portfolio") PORTFOLIO
+									li
+										a(href="#team") TEAM
+									li
+										a(href="#") TESTIMONIAL
+									li
+										a(href="#offers") PRICING
+									li
+										a(href="#contactus") CONTACT
+				.container
+					.row.text-center
+						.text-hero
+							h2 Stand Out From The Crowd
+							p For photogrhapher and freelancer who want to exclusively<br>showcase their oproducts
+					.row.text-center
+						a.deslice.arrow_down.boton(href="#service")
+							
+
+		section#service.mg
+			.container
+				.row
+					.col-md-6.img-res.text-center
+						.img-res
+							+insertimg("p15.jpg","Servicio")
+					.col-md-6
+						.servicesdescrip
+							+titlesection("Services","We Provide")
+							p.mg-30.pd-10 Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do elusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+							+mediaservice("online-store15.png","carrito","PSD TEMPLATE DESIGN")
+							+mediaservice("mug16.png","paleta","GRAPHICS DESIGN")
+							+mediaservice("photography88.png","robot","PHOTOGRAPHY")
+		section#about
+			.fondo.pd
+				.container
+					.row
+						.col-md-6
+							+titlesection("Welcome To","W Studio")
+							p.mg-30.pd-10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae blanditiis quas ipsa cum voluptate aspernatur quo, consectetur eligendi dicta earum iusto ex est libero odit itaque ducimus necessitatibus, maxime alias.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur, illo quam laborum molestias quos laboriosam eveniet dolorum vitae veniam modi, labore soluta. Consequuntur reprehenderit, eos facere illo, ratione quidem.
+						.col-md-6
+							iframe(src="assets/images/video.mp4" width="100%" height="400")
+		section#team.pd
+			.container
+				.row
+					.col-md-12
+						+titlesection("Meet The","Team")
+				.row.pdt
+					.col-md-3.col-xs-12.pd-0
+						+insertimgres("member7.jpg","miembro7")
+					.col-md-3.col-xs-12
+						+descripteam("NETHANEL GILROY","Founder & CEO")
+					.col-md-3.col-xs-12.pd-0
+						+insertimgres("member8.jpg","miembro8")
+					.col-md-3.col-xs-12
+						+descripteam("NAREK ROUBEN","Marketing Director")
+				.row
+					.col-md-3.col-xs-12.text-right
+						+descripteam("SAMANTHA MILNER","Creative Director")
+					.col-md-3.col-xs-12.pd-0
+						+insertimgres("member9.jpg","miembro9")
+					.col-md-3.col-xs-12.text-right
+						+descripteam("LOUISE ALASTRIONA","UI/UX Specialist")
+					.col-md-3.col-xs-12.pd-0
+						+insertimgres("member10.jpg","miembro10")
+		section#offers
+			.container
+				.row
+					.col-md-12
+						+titlesection("Our Best", "Offers")
+				.row
+					.col-md-3
+						.offer.text-center
+							table
+								thead
+									tr
+										td(colspan="2") 	
+											h3 Starter
+											p.lower <span>$50</span>/mo
+								tbody
+									tr
+										td.top
+											+insertimg("man88.png", "user")
+											p 20 users
+										td.top
+											+insertimg("rectangles29.png", "pages")
+											p 20 users
+									tr
+										td.top
+											+insertimg("database22.png", "database")
+											p 20 users
+										td.top
+											+insertimg("email162.png", "pages")
+											p 20 users
+									tr
+										td(colspan="2")
+											a.boton(href="#") ORDER NOW
+					.col-md-3
+						.offer
+							table
+								thead
+									tr
+										td(colspan="2") 	
+											h3 Starter
+											p.lower <span>$50</span>/mo
+								tbody
+									tr
+										td.top
+											+insertimg("man88.png", "user")
+											p 20 users
+										td.top
+											+insertimg("rectangles29.png", "pages")
+											p 20 users
+									tr
+										td.top
+											+insertimg("database22.png", "database")
+											p 20 users
+										td.top
+											+insertimg("email162.png", "pages")
+											p 20 users
+									tr
+										td(colspan="2")
+											a.boton(href="#") ORDER NOW
+					.col-md-3
+						.offer
+							table
+								thead
+									tr
+										td(colspan="2") 	
+											h3 Starter
+											p.lower <span>$50</span>/mo
+								tbody
+									tr
+										td.top
+											+insertimg("man88.png", "user")
+											p 20 users
+										td.top
+											+insertimg("rectangles29.png", "pages")
+											p 20 users
+									tr
+										td.top
+											+insertimg("database22.png", "database")
+											p 20 users
+										td.top
+											+insertimg("email162.png", "pages")
+											p 20 users
+									tr
+										td(colspan="2")
+											a.boton(href="#") ORDER NOW
+					.col-md-3
+						.offer
+							table
+								thead
+									tr
+										td(colspan="2") 	
+											h3 Starter
+											p.lower <span>$50</span>/mo
+								tbody
+									tr
+										td.top
+											+insertimg("man88.png", "user")
+											p 20 users
+										td.top
+											+insertimg("rectangles29.png", "pages")
+											p 20 users
+									tr
+										td.top
+											+insertimg("database22.png", "database")
+											p 20 users
+										td.top
+											+insertimg("email162.png", "pages")
+											p 20 users
+									tr
+										td(colspan="2")
+											a.boton(href="#") ORDER NOW
+					
+		section#contactus
+			.container.mg
+				.row
+					.col-md-8
+						+titlesection("Contact","Us")
+						p.pd We love being a web designer and we're incredibly thankful that we decided to join this industry many years ago. Contact us so we can help better.
+						form
+							input.formcontact(type="text" id="name" placeholder="Name*" required="required")
+							input.formcontact(type="email" id="email" placeholder="Email*" required="required")
+							input.formcontact(type="text" id="subject" placeholder="subject")
+							textarea(placeholder="Message*" row=10)
+							a.boton(href="#") SUBMIT
+					.col-md-4
+						article
+							h4.pd-10 CONTACT INFO
+							p.pd-10 1455 19th St.<br> Santa Monica, CA 90404</br>
+							p.pd-10 <span>EMAIL:</span> <a href="">yourmail@yourdomain.com</a></br><span>PHONE:</span> <a href="">+88(0)101 0000 000</a></br><span>FAX:</span> <a href="">+88(0)202 0000 001</a>	
+						article
+							h4 CONNECT WITH US
+							p <a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a>
+							p <a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a><a href="#" class=".fa.social_facebook.social"></a>
+				
+				
+						article
+							+droplist("Our Company Mission")
+							+droplist("Company Philasophy")
+							+droplist("Company Promise")
+		footer
+			.container
+				.row
+					.col-md-4.col-xs-12
+						+insertimg("w-logo.jpg","Studio W")
+					.col-md-4.col-xs-12.text-center
+						p COPYRIGHT © 2016. WILY LAB LIMITED</br>DESIGED AND DEVELOPED BY <a href="#">WILYLAB</a>
+					.col-md-4.col-xs-12.text-center
+						a.fa.social_facebook.social
+						a.fa.social_twitter.social
+						a.fa.social_googleplus.social
+						a.fa.social_pinterest.social
+
+
+
+
+
+		//comentando ando
+		script(type="text/javascript" src="assets/js/jquery.js") 
+		script(type="text/javascript" src="assets/js/bootstrap.min.js") 
+		script(type="text/javascript" src="assets/js/main.js")
+		
