@@ -10,7 +10,7 @@ html(lang="en")
 		link(rel="stylesheet", href="assets/css/main.css")
 		link(rel="icon", type="image/jpeg", href="assets/images/w-logo.jpg")
 		link( href="https://fonts.googleapis.com/css?family=Raleway:400, 100, 200, 300, 600, 500, 700, 800, 900" rel="stylesheet")
-	body
+	body(data-spy="scroll" data-target=".navbar" data-offset="50")
 		section#hero
 			.fondo
 				header
@@ -54,7 +54,7 @@ html(lang="en")
 		section#service.mg
 			.container
 				.row
-					.col-md-6.img-res.text-center
+					.col-md-6.img-res.text-center.hidden-xs
 						.img-res
 							+insertimg("p15.jpg","Servicio")
 					.col-md-6
@@ -72,7 +72,8 @@ html(lang="en")
 							+titlesection("Welcome To","W Studio")
 							p.mg-30.pd-10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae blanditiis quas ipsa cum voluptate aspernatur quo, consectetur eligendi dicta earum iusto ex est libero odit itaque ducimus necessitatibus, maxime alias.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur, illo quam laborum molestias quos laboriosam eveniet dolorum vitae veniam modi, labore soluta. Consequuntur reprehenderit, eos facere illo, ratione quidem.
 						.col-md-6
-							iframe(src="assets/images/video.mp4" width="100%" height="400")
+							video(width="100%" height="400" controls)
+								source(src="assets/images/video.mp4" type="video/mp4")
 		section#team.pd
 			.container
 				.row

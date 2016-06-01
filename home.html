@@ -10,7 +10,7 @@
     <link rel="icon" type="image/jpeg" href="assets/images/w-logo.jpg"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400, 100, 200, 300, 600, 500, 700, 800, 900" rel="stylesheet"/>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <section id="hero">
       <div class="fondo">
         <header>
@@ -48,7 +48,7 @@
     <section id="service" class="mg">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 img-res text-center">
+          <div class="col-md-6 img-res text-center hidden-xs">
             <div class="img-res"><img src="assets/images/p15.jpg" alt="Servicio"/>
             </div>
           </div>
@@ -100,7 +100,9 @@
               <p class="mg-30 pd-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae blanditiis quas ipsa cum voluptate aspernatur quo, consectetur eligendi dicta earum iusto ex est libero odit itaque ducimus necessitatibus, maxime alias.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur, illo quam laborum molestias quos laboriosam eveniet dolorum vitae veniam modi, labore soluta. Consequuntur reprehenderit, eos facere illo, ratione quidem.</p>
             </div>
             <div class="col-md-6">
-              <iframe src="assets/images/video.mp4" width="100%" height="400"></iframe>
+              <video width="100%" height="400" controls="controls">
+                <source src="assets/images/video.mp4" type="video/mp4"/>
+              </video>
             </div>
           </div>
         </div>
